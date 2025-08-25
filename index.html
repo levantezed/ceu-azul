@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    </style>
+    <link rel="icon" href="CSS/img/logo.svg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Céu-Azul papelaria</title>
+</head>
+<body>
+    <header>
+        <section id="banner">
+            <nav>
+                <div class="identify">        
+                    <div class="icon"></div>
+                    <h2>Céu Azul</h2>
+                </div>    
+                <ul>
+                    <li><a href="#about">Sobre nós</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <strong><h1>Bem-vindos à Céu Azul!</h1></strong>
+            <p>Onde suas ideias voam alto!</p>
+        </section>
+    </header>
+    <main>
+        
+        <div class="clouds">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+        </div>
+
+        <section id="about-us">
+            <h2>Sobre nós</h2>
+            <p> Na Papelaria Céu Azul, acreditamos que cada detalhe faz diferença. Por isso, reunimos os melhores materiais escolares, de escritório e de organização para transformar o seu dia a dia em algo mais prático, criativo e cheio de cor.</p>
+        </section>
+
+        <section id="products">
+            <div class="txt-products">    
+                <h2>Produtos</h2>
+                <p>Cores, cadernos e tudo que inspira vc</p>
+            </div>
+            <div class="div" id="cards">
+                <article id="card">
+                    <div class="img1"></div>
+                    <p>Caderno: R$45,90</p>
+                </article>
+                
+                <article id="card">
+                    <div class="img2"></div>
+                    <p>Caneta touch 80: R$120,00</p>
+                </article>
+                
+                <article id="card">
+                    <div class="img3"></div>
+                    <p>Estojo: R$39,90</p>
+                </article>
+
+                <article id="card">
+                    <div class="img4"></div>
+                    <p>Bobbie-Goods Original: R$49,90</p>
+                </article>
+
+                <article id="card">
+                    <div class="img5"></div>
+                    <p>Lápis de cor faber 12: R$20,50</p>
+                </article>
+
+                <article id="card">
+                    <div class="img6"></div>
+                    <p>Lápis grafite  faber: R$2,50 unidade</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <h3>Fale conosco</h3>
+            <div class="all-contact">
+                <article id="info-contact">
+                    <h2>Informações</h2>
+                    <p>Caso ocorra algum problema, nossas informações de contato estão aqui:
+                    <br><br>WhatsApp: 19 92653-9878<br><br>
+                    Email: apapelaria.ceuazul@gmail.com</p>        
+                </article>
+
+                <div class="or"><p>ou</p></div>
+
+                <form>
+                    <div class="form-txt"><p>Fale por aqui:</p></div><br>
+                    <label for="name">Nome:</label>
+                    <input class="input" type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input class="input" type="email" id="email" name="email" required>
+                    
+                    <label for="message">Mensagem:</label>
+                    <textarea class="textarea" name="message" id="message" required></textarea>
+                    <div class="button">
+                        <button type="button" onclick="validar()">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                    
+                </form>
+            </div>    
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy2025 Céu Azul - Todos os direitos reservados</p>
+    </footer>
+    <script src="JS/index.js"></script>
+</body>
+</html>

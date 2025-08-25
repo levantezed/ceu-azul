@@ -1,0 +1,506 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/*header*/
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid 3px rgb(0, 119, 216);
+    z-index: 10;
+}
+
+
+
+nav{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    box-shadow: #ffffff 0px 0px 10px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10vw 0;
+}
+
+nav ul li{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgb(24, 78, 255);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 1vw;
+}
+
+nav ul li a:hover{
+    text-shadow: rgb(109, 143, 255) 0px 0px 20px;
+}
+
+.identify{
+    display: flex;
+    align-items: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 1vw;
+    color: #2154fa;
+}
+
+.icon{
+    border-radius: 50%;
+    border: 2px solid white;
+    min-width: 2rem;
+    min-height: 2rem;
+    margin: 0 3vw 0;
+    background-image: url(img/logo.svg);
+    background-position: center;
+    background-size: 150%;
+}
+
+
+/*main*/
+
+main{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #3b69ff;
+}
+
+main h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+main p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*--nuvens--*/
+
+.clouds{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clouds :nth-child(1), .clouds :nth-child(2), 
+.clouds :nth-child(3), .clouds :nth-child(4), 
+.clouds :nth-child(5), .clouds :nth-child(6), 
+.clouds :nth-child(7), .clouds :nth-child(8), 
+.clouds :nth-child(9)
+{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+}
+
+.cloud{
+    background-image: url(img/nuvem.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.clouds :nth-child(1){
+    width: 17vw;
+    height: 17vw;
+    top: 2rem;
+    left: 3rem;
+}
+
+.clouds :nth-child(2){
+    width: 10vw;
+    height: 10vw;
+    top: 15rem;
+    left: 4vw;
+}
+
+.clouds :nth-child(3){
+    width: 13vw;
+    height: 13vw;
+    top: 25rem;
+    left: 5rem;
+}
+
+.clouds :nth-child(4){
+    width: 15vw;
+    height: 15vw;
+    top: 5rem;
+    right: 2rem;
+}
+
+.clouds :nth-child(5){
+    width: 15vw;
+    height: 15vw;
+    top: 20rem;
+    right: 4rem;
+}
+
+.clouds :nth-child(6){
+    width: 15vw;
+    height: 15vw;
+    top: 40rem;
+    right: 20rem;
+}
+
+.clouds :nth-child(7){
+    width: 15vw;
+    height: 15vw;
+    top: 30rem;
+    left: 30rem;
+}
+
+.clouds :nth-child(8){
+    width: 15vw;
+    height: 15vw;
+    top: 10rem;
+    right: 30rem;
+}
+
+
+
+/*--nuvens--*/
+
+
+
+
+/*banner*/
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-image: url(img/banner.svg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 15vh 0 30vh;
+    width: 100%;
+    box-shadow:  0px 0px 32px rgb(255, 255, 255);
+    border-bottom: solid white 0.5vw;
+    z-index: 10;
+}
+
+strong{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1vw;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    color: rgba(255, 255, 255, 0.911);
+    margin: 100px 0 0;
+    text-shadow: rgb(0, 12, 66) 0px -0.5px 5px;
+    
+}
+
+#banner p {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgba(255, 255, 255, 0.856);
+    font-size: larger;
+    text-align: center;
+    text-shadow: rgb(0, 12, 66) 0px 0px 5px;
+    border-radius: 5vw;
+    box-shadow: inset #0066c0d8 0px 0px 50px;
+    padding: 15px;
+}
+
+/*about-us*/
+
+#about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10vw 0 0;
+    padding: 0 0 5vw;
+    z-index: 5;
+    background-color: rgba(59, 105, 255, 0.808);
+    border-radius: 1vw;
+}
+
+#about-us h2{
+    border-radius: 1vw;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+#about-us p{
+    border-radius: 1vw;
+    max-width: 30rem;
+    padding: 1vw;
+}
+
+/*products*/
+
+#products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vw 0 10vw;
+    z-index: 5;
+}
+
+#products h2{
+    margin-bottom: 20px;
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+#products p{
+    border-radius: 1vw;
+    margin: 15px;
+    padding: 1vw;
+}
+
+.txt-products{
+    background-color: rgba(59, 105, 255, 0.808);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    flex-direction: column;
+}
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#card{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5vw;
+    width: 225px;
+    transition: 0.1s linear;
+    border-radius: 10px;
+    background-color: rgba(5, 74, 223, 0.87);
+}
+
+#cards p{
+    color: white;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#card:hover{
+    transform: scale(1.1);
+    transition: 0.1s linear;
+}
+
+.img1{
+    background-image: url(img/caderno.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img2{
+    background-image: url(img/canetas.jpg);
+    background-size: cover;
+}
+
+.img3{
+    background-image: url(img/estojo.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.img4{
+    background-image: url(img/bobbie.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img5{
+    background-image: url(img/lapis.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img6{
+    background-image: url(img/grafite.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6{
+    display: flex;
+    padding-left: 100%;
+    padding-bottom: 100%;
+    border-radius: 10px;
+    border-bottom: #2154fa 2px solid;
+}
+
+/*contact*/
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(59, 105, 255, 0.808);
+}
+
+#contact h2{
+    margin: 5vw 0 1vw ;
+}
+
+#contact h3{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#info-contact{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin: 5vw;
+}
+
+.all-contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+#info-contact p{
+    max-width: 250px;
+    text-align: left;
+}
+
+#info-contact h2{
+    margin: 2vw 0vw;
+}
+
+.or{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+form{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    min-width: 150px;
+    margin: 5vw;
+    border: solid white 5px;
+    border-radius: 2vw;
+    padding: 5vw;
+}
+
+.error-form{
+    width: 100%;
+    margin-bottom: 2vw;
+    border-radius: 5px;
+    border: 2px solid rgb(252, 79, 79);
+}
+
+
+label{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-txt{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input{
+    width: 100%;
+    margin-bottom: 2vw;
+    border-radius: 5px;
+    border: 2px solid rgb(79, 125, 252);
+}
+
+.textarea{
+    resize: none;
+    width: 100%;
+    margin-bottom: 1vw; 
+    border-radius: 5px;
+    border: 2px solid rgb(79, 125, 252);
+}
+
+.error-textarea{
+    resize: none;
+    width: 100%;
+    margin-bottom: 1vw; 
+    border-radius: 5px;
+    border: 2px solid rgb(252, 79, 79);
+}
+
+.button{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+button{
+    border-radius: 5px;
+    padding: 3px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+    margin: 2px;
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #0026a1;
+    color: white;
+    z-index: 10;
+    box-shadow: inset #3b69ff 0px 0px 50px;
+}
+
+footer p{
+    margin: 2vw;
+}
+
+/*import*/
